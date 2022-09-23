@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATTLECUBE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,700;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="select-block">
+        <h1>BATTLECUBE</h1>
+        <hr>
+        <h2 class="select-text">SELECT YOUR CUBE</h2>
+        <div class="cards">
+            <input type="radio" name="block" id="white" />
+            <label class="container-block white-card" for="white">
+                <p>WHITE</p>
+            </label>
+            <input type="radio" name="block" id="gray" />
+            <label class="container-block gray-card" for="gray" >
+                <p>GRAY</p>
+            </label>
+            <input type="radio" name="block" id="black" />
+            <label class="container-block black-card" for="black" >
+                <p>BLACK</p>
+            </label>
+        </div>
+        <button id="btn-block-select">SELECT</button>
+    </section>
+    <section id="select-attack">
+        <h1>BATTLECUBE</h1>
+        <hr>
+        <h2 class="subtitle-attack">SELECT YOUR ATTACK</h2>
+        <div class="attack-container">
+            <button class="btn-attack" id="btn-fire">FIRE</button>
+            <button class="btn-attack" id="btn-water">WATER</button>
+            <button class="btn-attack" id="btn-earth">EARTH</button>
+        </div>
+        <div>
+            <section id="message">
+                <p id="result">LET'S GO</p>
+                <section id="restart">
+                    <button id="btn-restart">RESTART</button>
+                </section>
+            </section>
+        </div>
+        <div class="attacks-container">
+            <div class="attacks-col">
+                <p>LIFES</p>
+                <p id="lifePlayer">3</p>
+                <hr class="hr-col">
+                <p>PLAYER CUBE</p>
+                <p id="player-block"></p>
+                <hr class="hr-col">
+                <div id="attack-player"></div>
+            </div>
+            <div class="attacks-col">
+                <p>LIFES</p>
+                <p id="lifeEnemy">3</p>
+                <hr class="hr-col">
+                <p>ENEMY CUBE</p>
+                <p id="enemy-block"></p>
+                <hr class="hr-col">
+                <div id="attack-enemy"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js" ></script>
+</body>
+</html>
