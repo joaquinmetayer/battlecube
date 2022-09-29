@@ -82,7 +82,9 @@ function attackRandomEnemy(){
 function combat(){
     if (attackEnemy == attackPlayer) {
         createMessage('TIE')
-        } else if ((attackPlayer == 'FIRE' && attackEnemy == 'FIRE') || (attackPlayer == 'WATER' && attackEnemy == 'FIRE') || (attackPlayer == 'EARTH' && attackEnemy == 'WATER')) {
+        } else if ((attackPlayer == 'FIRE' && attackEnemy == 'FIRE') || 
+                   (attackPlayer == 'WATER' && attackEnemy == 'FIRE') || 
+                   (attackPlayer == 'EARTH' && attackEnemy == 'WATER')) {
         createMessage('WIN')
         lifeEnemy--
         spanLifeEnemy.innerHTML = lifeEnemy
